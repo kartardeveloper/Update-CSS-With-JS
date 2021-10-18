@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Update CSS Properties With JS</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="main-heading">Update CSS Properties With <span>JS</span></h1>
+        <div class="edit__content-container">
+            <p class="edit__spacing-container">
+                <span class="edit__name">Spacing:</span>
+                <input type="range" class="edit__range" max="200" min="10" value="10" onchange="changeValue()" />
+            </p>
+            <p class="edit__blur-container">
+                <span class="edit__name">Blur:</span>
+                <input type="range" class="edit__range" max="30" min="0" value="0" onchange="changeValue()" />
+            </p>
+            <p class="edit__color-container">
+                <span class="edit__name">Color:</span>
+                <input type="color" class="edit__color" onchange="changeValue()" />
+            </p>
+        </div>
+        <div class="main__image-container">
+            <figure class="image-container">
+                <img src="../Images/man.jpg" alt="Image" />
+            </figure>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
